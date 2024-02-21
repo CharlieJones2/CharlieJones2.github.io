@@ -1,8 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const header = document.querySelector('header h1');
-    header.textContent = 'Charlie Jones';
-});
-
 const projects = [
     {
         name: 'Microsoft SQL Server into Power BI Dashboard',

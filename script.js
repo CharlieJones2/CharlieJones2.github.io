@@ -83,6 +83,68 @@ function show_image(src, title) {
     return img;
 }
 
+// function filterProjects() {
+//     const selectedSoftware = Array.from(checkboxes)
+//         .filter((checkbox) => checkbox.checked)
+//         .map((checkbox) => checkbox.value);
+
+//     projectsContainer.innerHTML = ''; // Clear existing projects
+//     let projectFound = false;
+
+//     projects.forEach((project) => {
+//         if (selectedSoftware.every((software) => project.softwareUsed.includes(software))) {
+//             projectFound = true;
+//             // Create a project element
+//             const projectElement = document.createElement('div');
+//             projectElement.classList.add('project');
+//             projectElement.innerHTML = `
+//                 <h2>${project.name}</h2>
+//                 <p>${project.description}</p>
+//             `;
+    
+//             // Create a container for software icons
+//             const iconsContainer = document.createElement('div');
+//             iconsContainer.classList.add('icons-container');
+    
+//             // Add software icons
+//             project.softwareIcons.forEach((softwareIcon) => {
+//                 const iconImage = show_image(softwareIcon);
+//                 iconImage.classList.add('icon-image');
+//                 iconsContainer.appendChild(iconImage);
+//             });
+    
+//             // Create a container for the project image
+//             const imageContainer = document.createElement('div');
+//             imageContainer.classList.add('image-container');
+    
+//             // Add project image
+//             const projectImage = show_image(project.imgUrl, project.imgTitle);
+//             projectImage.classList.add('project-image');
+//             imageContainer.appendChild(projectImage);
+    
+//             // Append the containers to the project element
+//             projectElement.appendChild(iconsContainer);
+//             projectElement.appendChild(imageContainer);
+    
+//             // Create an anchor tag for the project link
+//             const projectLink = document.createElement('a');
+//             projectLink.href = project.link; // Set the link URL
+//             projectLink.style.display = 'contents'; // Makes only the box clickable
+//             projectLink.appendChild(projectElement); // Wrap the project element
+    
+//             // Append the entire project to the container
+//             projectsContainer.appendChild(projectLink);
+//         }
+//     });
+//     if (!projectFound) {
+//         projectsContainer.innerHTML = 'No projects with this combination of software';
+//     }
+// }
+
+// checkboxes.forEach((checkbox) => {
+//     checkbox.addEventListener('change', filterProjects);
+// });
+
 function filterProjects() {
     const selectedSoftware = Array.from(checkboxes)
         .filter((checkbox) => checkbox.checked)
@@ -90,8 +152,12 @@ function filterProjects() {
 
     projectsContainer.innerHTML = ''; // Clear existing projects
 
+    let projectFound = false; // Flag to check if any project is found
+
     projects.forEach((project) => {
         if (selectedSoftware.every((software) => project.softwareUsed.includes(software))) {
+            projectFound = true; // Set the flag to true if a project is found
+
             // Create a project element
             const projectElement = document.createElement('div');
             projectElement.classList.add('project');
@@ -134,6 +200,53 @@ function filterProjects() {
             projectsContainer.appendChild(projectLink);
         }
     });
+
+    // Display message if no projects found
+    if (!projectFound) {
+        const projectElement = document.createElement('div');
+        projectElement.classList.add('project');
+        projectElement.innerHTML = `
+            <h2>Oops!</h2>
+            <p>No projects found with that combination of software. Click this box to reset all filters.</p>
+        `;
+
+        // Create a container for the project image
+        const imageContainer = document.createElement('div');
+        imageContainer.classList.add('image-container');
+
+        // Add project image
+        const projectImage = show_image('Images/Psyduck.png', 'Psyduck');
+        projectImage.classList.add('project-image');
+        imageContainer.appendChild(projectImage);
+
+        // Append the containers to the project element
+        projectElement.appendChild(imageContainer);
+        projectsContainer.appendChild(projectElement);
+
+        const projectLink = document.createElement('a');
+        projectLink.classList.add('reset');
+        projectLink.style.display = 'contents';
+        projectLink.appendChild(projectElement);
+
+            // Add an event listener to the link
+        projectLink.addEventListener('click', function() {
+
+            checkboxes.forEach((checkbox) => {
+                checkbox.checked = false;
+            });
+
+            filterProjects(); // Call the filterProjects function to update the projects displayed
+        });
+
+// Append the entire project to the container
+projectsContainer.appendChild(projectLink);
+
+    // Append the reset button to the project element
+    projectElement.appendChild(resetButton);
+    
+        // Append the project element to the container
+        // projectsContainer.appendChild(projectElement);;
+    }
 }
 
 checkboxes.forEach((checkbox) => {

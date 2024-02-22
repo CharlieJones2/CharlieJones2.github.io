@@ -154,3 +154,7 @@ pre {
 /* .project p, .icons-container, .image-container {
     border: 1px solid #ddd;
 } */
+
+.reset {
+    cursor: pointer;
+}

@@ -71,14 +71,14 @@ body {
 .project {
     width: 600px;
     height: 310px;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ddd;
     margin: 20px;
     position: relative;
     transition: box-shadow 0.3s ease;
 }
 
-.project img {
+/* .project img {
     width: 50px;
     height: 50px;
     margin-right: 10px;
@@ -86,7 +86,7 @@ body {
     display: inline-block;
     margin-bottom: 10px;
     position: relative;
-}
+} */
 
 .project:hover {
     box-shadow: 10px 10px 6px rgba(101, 123, 118, 0.5);
@@ -98,9 +98,13 @@ body {
 }
 
 .project p {
+    /* position: relative; */
     font-size: 14px;
     color: #555;
     margin-bottom: 20px;
+    max-width: 50%;
+    max-height: 60%;
+    overflow-y: auto;
 }
 
 .icon {
@@ -111,27 +115,42 @@ body {
 
 .icons-container {
     position: absolute;
-    bottom: 0;
+    bottom: 10;
     left: 10;
-}
+    max-width: 50%;
+    max-height: 20%;
+    object-fit: contain;
+    overflow-x: auto;
+} /* container for the icon images */
 
 .icons-container img {
     width: 50px;
     height: 50px;
-}
+    object-fit: contain;
+} /* the icon images themselves */
 
 .image-container {
     position: absolute;
-    bottom: 0;
+    bottom: 10;
     right: 10;
-}
+    max-width: 47%;
+    max-height: auto;
+    object-fit: contain;
+} /* container for the project images */
 
 .image-container img {
+    max-width: 100%;
+    max-height: 50%;
     width: 200px;
     height: 200px;
-}
+    object-fit: contain;
+} /* the project images themselves */
 
 pre {
     margin: 10px;
     border: 1px solid #ddd;
 }
+
+/* .project p, .icons-container, .image-container {
+    border: 1px solid #ddd;
+} */

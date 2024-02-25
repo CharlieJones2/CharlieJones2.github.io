@@ -83,68 +83,6 @@ function show_image(src, title) {
     return img;
 }
 
-// function filterProjects() {
-//     const selectedSoftware = Array.from(checkboxes)
-//         .filter((checkbox) => checkbox.checked)
-//         .map((checkbox) => checkbox.value);
-
-//     projectsContainer.innerHTML = ''; // Clear existing projects
-//     let projectFound = false;
-
-//     projects.forEach((project) => {
-//         if (selectedSoftware.every((software) => project.softwareUsed.includes(software))) {
-//             projectFound = true;
-//             // Create a project element
-//             const projectElement = document.createElement('div');
-//             projectElement.classList.add('project');
-//             projectElement.innerHTML = `
-//                 <h2>${project.name}</h2>
-//                 <p>${project.description}</p>
-//             `;
-    
-//             // Create a container for software icons
-//             const iconsContainer = document.createElement('div');
-//             iconsContainer.classList.add('icons-container');
-    
-//             // Add software icons
-//             project.softwareIcons.forEach((softwareIcon) => {
-//                 const iconImage = show_image(softwareIcon);
-//                 iconImage.classList.add('icon-image');
-//                 iconsContainer.appendChild(iconImage);
-//             });
-    
-//             // Create a container for the project image
-//             const imageContainer = document.createElement('div');
-//             imageContainer.classList.add('image-container');
-    
-//             // Add project image
-//             const projectImage = show_image(project.imgUrl, project.imgTitle);
-//             projectImage.classList.add('project-image');
-//             imageContainer.appendChild(projectImage);
-    
-//             // Append the containers to the project element
-//             projectElement.appendChild(iconsContainer);
-//             projectElement.appendChild(imageContainer);
-    
-//             // Create an anchor tag for the project link
-//             const projectLink = document.createElement('a');
-//             projectLink.href = project.link; // Set the link URL
-//             projectLink.style.display = 'contents'; // Makes only the box clickable
-//             projectLink.appendChild(projectElement); // Wrap the project element
-    
-//             // Append the entire project to the container
-//             projectsContainer.appendChild(projectLink);
-//         }
-//     });
-//     if (!projectFound) {
-//         projectsContainer.innerHTML = 'No projects with this combination of software';
-//     }
-// }
-
-// checkboxes.forEach((checkbox) => {
-//     checkbox.addEventListener('change', filterProjects);
-// });
-
 function filterProjects() {
     const selectedSoftware = Array.from(checkboxes)
         .filter((checkbox) => checkbox.checked)

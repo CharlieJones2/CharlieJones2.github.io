@@ -2,11 +2,11 @@ const projects = [
     {
         name: 'Determining an Individuals\' Environmental Impact',
         description: 'Using a synthetically generated dataset based on numerous leading studies, this project seeks to determine which individual characteristics, such as diet, travel type and frequency impact our individual impact, and uses regression analysis to determine how best to minimise ones\' impact.',
-        softwareUsed: ['python', 'scikit-learn', 'powerbi'],
+        softwareUsed: ['python', 'scikit-learn', 'streamlit'],
         imgUrl: 'Images/Turtwig.png',
         imgTitle: 'Turtwig',
         link: 'project_environment.html',
-        softwareIcons: ['https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg', 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg', 'https://raw.githubusercontent.com/microsoft/PowerBI-Icons/2bf1c982fb24528eee1559a96a25eb534c175cfd/SVG/Power-BI.svg']
+        softwareIcons: ['https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg', 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg', 'https://streamlit.io/images/brand/streamlit-mark-color.svg']
     },
     {
         name: 'Analysing Popularity Trends in Emo and Hardcore Music',

@@ -148,11 +148,26 @@ pre {
 }
 
 iframe {
-    border: none;
+    /* border: none; */
+    height: 80vh !important;
 }
 
-iframe::after {
-    content: '';
-    display: block;
-    visibility: hidden;
+body .gist .gist-file {
+    margin-bottom: 0;
+    border: 1px solid #ddd;
+    border-radius: 0;
 }
+
+body .gist .gist-data {
+    border-bottom: none;
+    border-radius: 0;
+}
+
+body .gist .gist-meta {
+    display: none;
+}
+
+.render-viewer {
+    height: 80vh !important;
+    overflow: hidden !important;
+  }

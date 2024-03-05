@@ -23,6 +23,7 @@ a:active{
 
 .og-nav, nav ul {
     margin: 0;
+    width: 100%;
     list-style: none;
     display: flex;
     justify-content: center;

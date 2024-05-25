@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>75 Hard Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>75 Hard Tracker</h1>
+        <form id="tracker-form">
+            <label for="person">Select Person:</label>
+            <input type="radio" id="oliwia" name="person" value="Oliwia" checked>
+            <label for="oliwia">Oliwia</label>
+            <input type="radio" id="charlie" name="person" value="Charlie">
+            <label for="charlie">Charlie</label>
+            
+            <div>
+                <input type="checkbox" id="task1" name="task1">
+                <label for="task1">Eat Healthy</label>
+            </div>
+            <div>
+                <input type="checkbox" id="task2" name="task2">
+                <label for="task2">Drink Water</label>
+            </div>
+            <div>
+                <input type="checkbox" id="task3" name="task3">
+                <label for="task3">Indoor Exercise</label>
+            </div>
+            <div>
+                <input type="checkbox" id="task4" name="task4">
+                <label for="task4">Outdoor Exercise</label>
+            </div>
+            <div>
+                <input type="checkbox" id="task5" name="task5">
+                <label for="task5">Read Book</label>
+            </div>
+            <div>
+                <input type="checkbox" id="task6" name="task6">
+                <label for="task6">Progress Pic</label>
+            </div>
+
+            <button type="button" onclick="updateTasks()">Update Tasks</button>
+        </form>
+        <div id="message"></div>
+        <div id="data"></div>
+    </div>
+
+    <script src="75Script.js"></script>
+</body>
+</html>

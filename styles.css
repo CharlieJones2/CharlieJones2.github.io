@@ -82,7 +82,7 @@ body {
     box-shadow: 10px 10px 6px rgba(101, 123, 118, 0.5);
 }
 
-.content {
+.content, .powerbi {
     box-shadow: 10px 10px 6px rgba(101,123,118,0.5);
 }
 

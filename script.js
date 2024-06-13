@@ -1,5 +1,14 @@
 const projects = [
     {
+        name: 'Streaming History Analysis - My Year in Music',
+        description: 'This project involves creating a Power BI report to showcase trends in my listening history for the current year. Using the Last.fm API, I extract data on all my streams for the current year with Python, and present the information in a concise and interactive report.',
+        softwareUsed: ['python', 'powerbi'],
+        imgUrl: 'Images/Roxie.png',
+        imgTitle: 'Roxie',
+        link: 'project_music.html',
+        softwareIcons: ['https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg', 'https://raw.githubusercontent.com/microsoft/PowerBI-Icons/2bf1c982fb24528eee1559a96a25eb534c175cfd/SVG/Power-BI.svg']
+    },
+    {
         name: 'Determining an Individuals\' Environmental Impact',
         description: 'Using a synthetically generated dataset based on numerous leading studies, this project seeks to determine which individual characteristics, such as diet, travel type and frequency impact our individual impact, and uses regression analysis to determine how best to minimise ones\' impact.',
         softwareUsed: ['python', 'scikit-learn', 'streamlit'],
@@ -8,42 +17,33 @@ const projects = [
         link: 'project_environment.html',
         softwareIcons: ['https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg', 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg', 'https://streamlit.io/images/brand/streamlit-mark-color.svg']
     },
-    {
-        name: 'Analysing Popularity Trends in Emo and Hardcore Music',
-        description: 'Looking at various different factors that impact the popularity of Emo and Hardcore music using the last.fm API, and visualising how these factors differ in importance over time using Power BI.',
-        softwareUsed: ['python', 'pytorch', 'powerbi'],
-        imgUrl: 'Images/Roxie.png',
-        imgTitle: 'Roxie',
-        link: 'project_music.html',
-        softwareIcons: ['https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg', 'https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg', 'https://raw.githubusercontent.com/microsoft/PowerBI-Icons/2bf1c982fb24528eee1559a96a25eb534c175cfd/SVG/Power-BI.svg']
-    },
-    {
-        name: 'How does Technology Usage Impact our Happiness?',
-        description: 'In an age of constant connection, why do we still feel lonely? This project analyses data from ___ and uses regression analysis to predict happiness based on smartphone usage',
-        softwareUsed: ['python', 'scikit-learn', 'powerbi'],
-        imgUrl: 'Images/Magnemite.png',
-        imgTitle: 'Magnemite',
-        link: 'project_smartphoneusage.html',
-        softwareIcons: ['https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg', 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg', 'https://raw.githubusercontent.com/microsoft/PowerBI-Icons/2bf1c982fb24528eee1559a96a25eb534c175cfd/SVG/Power-BI.svg']
-    },
-    {
-        name: 'Microsoft SQL Server into Power BI Dashboard',
-        description: 'For this project I\'m not sure what I want to do yet, but I want it to use SQL Server and I want to create a Power BI dashboard.',
-        softwareUsed: ['sql', 'powerbi'],
-        imgUrl: 'Images/Ethan.png',
-        imgTitle: 'Ethan (HGSS)',
-        link: "project_sqlserverpowerbi.html",
-        softwareIcons: ['https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg', 'https://raw.githubusercontent.com/microsoft/PowerBI-Icons/2bf1c982fb24528eee1559a96a25eb534c175cfd/SVG/Power-BI.svg']
-    },
-    {
-        name: 'The Impact of Meat and Dairy on Climate Change',
-        description: 'This project looks at one of the often most overlooked aspects of climate change and just how drastic its\' impact can be: eating animals.',
-        softwareUsed: ['python', 'scikit-learn'],
-        imgUrl: 'Images/Corsola-Galar.png',
-        imgTitle: 'Galarian Corsola',
-        link: 'project_wildfires.html',
-        softwareIcons: ['https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg', 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg']
-    },
+    // {
+    //     name: 'How does Technology Usage Impact our Happiness?',
+    //     description: 'In an age of constant connection, why do we still feel lonely? This project analyses data from ___ and uses regression analysis to predict happiness based on smartphone usage',
+    //     softwareUsed: ['python', 'scikit-learn', 'powerbi'],
+    //     imgUrl: 'Images/Magnemite.png',
+    //     imgTitle: 'Magnemite',
+    //     link: 'project_smartphoneusage.html',
+    //     softwareIcons: ['https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg', 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg', 'https://raw.githubusercontent.com/microsoft/PowerBI-Icons/2bf1c982fb24528eee1559a96a25eb534c175cfd/SVG/Power-BI.svg']
+    // },
+    // {
+    //     name: 'Microsoft SQL Server into Power BI Dashboard',
+    //     description: 'For this project I\'m not sure what I want to do yet, but I want it to use SQL Server and I want to create a Power BI dashboard.',
+    //     softwareUsed: ['sql', 'powerbi'],
+    //     imgUrl: 'Images/Ethan.png',
+    //     imgTitle: 'Ethan (HGSS)',
+    //     link: "project_sqlserverpowerbi.html",
+    //     softwareIcons: ['https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg', 'https://raw.githubusercontent.com/microsoft/PowerBI-Icons/2bf1c982fb24528eee1559a96a25eb534c175cfd/SVG/Power-BI.svg']
+    // },
+    // {
+    //     name: 'The Impact of Meat and Dairy on Climate Change',
+    //     description: 'This project looks at one of the often most overlooked aspects of climate change and just how drastic its\' impact can be: eating animals.',
+    //     softwareUsed: ['python', 'scikit-learn'],
+    //     imgUrl: 'Images/Corsola-Galar.png',
+    //     imgTitle: 'Galarian Corsola',
+    //     link: 'project_wildfires.html',
+    //     softwareIcons: ['https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg', 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg']
+    // },
     {
         name: 'Analysing Biodiversity in US National Parks',
         description: 'This project analyses biodiversity data across national parks in the USA, looking specifically at endangered species across different parks.',
@@ -62,15 +62,15 @@ const projects = [
         link: 'project_pokemon.html',
         softwareIcons: ['https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg', 'https://upload.vectorlogo.zone/logos/tableau/images/113a311a-6d5d-4b7e-9193-79807e4844e3.svg']
     },
-    {
-        name: 'SQL and Tableau Project',
-        description: 'Maybe I guess a more conventional project. Analysis of coffee shop sales to create dashboard or something.',
-        softwareUsed: ['sql', 'tableau'],
-        imgUrl: 'Images/Ethan.png',
-        imgTitle: 'Ethan (HGSS)',
-        link: "project_sqlservertableau.html",
-        softwareIcons: ['https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg', 'https://upload.vectorlogo.zone/logos/tableau/images/113a311a-6d5d-4b7e-9193-79807e4844e3.svg']
-    },
+    // {
+    //     name: 'SQL and Tableau Project',
+    //     description: 'Maybe I guess a more conventional project. Analysis of coffee shop sales to create dashboard or something.',
+    //     softwareUsed: ['sql', 'tableau'],
+    //     imgUrl: 'Images/Ethan.png',
+    //     imgTitle: 'Ethan (HGSS)',
+    //     link: "project_sqlservertableau.html",
+    //     softwareIcons: ['https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg', 'https://upload.vectorlogo.zone/logos/tableau/images/113a311a-6d5d-4b7e-9193-79807e4844e3.svg']
+    // },
 ];
 
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');

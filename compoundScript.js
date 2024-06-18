@@ -22,7 +22,7 @@ function calculateCompoundInterest() {
     }
 
     document.getElementById('result').innerText = 
-        `After ${years} years, your savings will be worth £${totalValue.toFixed(2)}, having earned interest of £${(totalValue - totalContribution).toFixed(2)}.`;
+        `After ${years} years, your savings will be worth £${formatCurrency(totalValue)}, having earned interest of £${formatCurrency(totalValue - totalContribution)}.`;
 
     // Render the chart
     const ctx = document.getElementById('interestChart').getContext('2d');
@@ -71,7 +71,11 @@ function calculateCompoundInterest() {
         const contributionCell = row.insertCell(2);
 
         yearCell.textContent = yearsList[i];
-        valueCell.textContent = `£${valuesList[i].toFixed(2)}`;
-        contributionCell.textContent = `£${contributions[i].toFixed(2)}`;
+        valueCell.textContent = `£${formatCurrency(valuesList[i])}`;
+        contributionCell.textContent = `£${formatCurrency(contributions[i])}`;
     }
+}
+
+function formatCurrency(value) {
+    return value.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
 }

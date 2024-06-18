@@ -192,7 +192,7 @@ th, td {
     text-align: right;
 }
 
-.input_wrapper open {
+.input_wrapper .open {
     right: 50%;
     width: 500px;
     height: 70px;

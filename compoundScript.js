@@ -1,3 +1,5 @@
+let interestChart = null;
+
 function calculateCompoundInterest() {
     const initial = parseFloat(document.getElementById('initial').value);
     const rate = parseFloat(document.getElementById('rate').value) / 100;
@@ -24,9 +26,14 @@ function calculateCompoundInterest() {
     document.getElementById('result').innerText = 
         `After ${years} years, your savings will be worth £${formatCurrency(totalValue)}, having earned interest of £${formatCurrency(totalValue - totalContribution)}.`;
 
+    // Clear previous chart
+    if (interestChart) {
+        interestChart.destroy();
+    }
+
     // Render the chart
     const ctx = document.getElementById('interestChart').getContext('2d');
-    new Chart(ctx, {
+    interestChart = new Chart(ctx, {
         type: 'line',
         data: {
             labels: yearsList,

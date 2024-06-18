@@ -20,17 +20,21 @@
     <main>
         <h1>Compound Interest Calculator</h1>
         <label for="initial">Enter initial deposit amount (£): </label>
-        <input type="number" id="initial" min="0" max="1000000" step="1000"><br>
-        
+        <div class="input_wrapper open">
+            <input type="number" id="initial" min="0" max="1000000" step="1000"><br>
+        </div>
         <label for="rate">Enter annual interest rate (%): </label>
-        <input type="number" id="rate" min="0" max="100" value="5" step="1"><br>
-        
+        <div class="input_wrapper open">
+            <input type="number" id="rate" min="0" max="100" value="5" step="1"><br>
+        </div>
         <label for="years">Enter number of years: </label>
-        <input type="number" id="years" min="1" max="150" step="1"><br>
-        
+        <div class="input_wrapper open">
+            <input type="number" id="years" min="1" max="150" step="1"><br>
+        </div>
         <label for="monthly">Enter monthly contribution amount (£): </label>
-        <input type="number" id="monthly" min="0" max="1000000" step="100"><br>
-        
+        <div class="input_wrapper open">
+            <input type="number" id="monthly" min="0" max="1000000" step="100"><br>
+        </div>
         <button onclick="calculateCompoundInterest()">Calculate</button>
         
         <h2>Results</h2>

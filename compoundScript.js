@@ -60,4 +60,18 @@ function calculateCompoundInterest() {
             }
         }
     });
+
+    // Render the table
+    const tableBody = document.getElementById('resultTable').getElementsByTagName('tbody')[0];
+    tableBody.innerHTML = ''; // Clear previous results
+    for (let i = 0; i < years; i++) {
+        const row = tableBody.insertRow();
+        const yearCell = row.insertCell(0);
+        const valueCell = row.insertCell(1);
+        const contributionCell = row.insertCell(2);
+
+        yearCell.textContent = yearsList[i];
+        valueCell.textContent = `£${valuesList[i].toFixed(2)}`;
+        contributionCell.textContent = `£${contributions[i].toFixed(2)}`;
+    }
 }

@@ -38,6 +38,6 @@
     <p id="result"></p>
     <canvas id="interestChart" width="400" height="200"></canvas>
     
-    <script src="app.js"></script>
+    <script src="compoundScript.js"></script>
 </body>
 </html>

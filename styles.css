@@ -176,3 +176,18 @@ body .gist .gist-meta {
     height: 80vh !important;
     overflow: hidden !important;
   }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #657b83;
+}
+
+th, td {
+    padding: 10px;
+    text-align: right;
+}

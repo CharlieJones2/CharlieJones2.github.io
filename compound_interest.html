@@ -17,39 +17,41 @@
         </ul>
     </nav>
     
-    <h1>Compound Interest Calculator</h1>
-    <label for="initial">Enter initial deposit amount (£): </label>
-    <input type="number" id="initial" min="0" max="1000000" step="1000"><br>
+    <main>
+        <h1>Compound Interest Calculator</h1>
+        <label for="initial">Enter initial deposit amount (£): </label>
+        <input type="number" id="initial" min="0" max="1000000" step="1000"><br>
+        
+        <label for="rate">Enter annual interest rate (%): </label>
+        <input type="number" id="rate" min="0" max="100" value="5" step="1"><br>
+        
+        <label for="years">Enter number of years: </label>
+        <input type="number" id="years" min="1" max="150" step="1"><br>
+        
+        <label for="monthly">Enter monthly contribution amount (£): </label>
+        <input type="number" id="monthly" min="0" max="1000000" step="100"><br>
+        
+        <button onclick="calculateCompoundInterest()">Calculate</button>
+        
+        <h2>Results</h2>
+        <p id="result"></p>
+        <canvas id="interestChart" width="400" height="200"></canvas>
     
-    <label for="rate">Enter annual interest rate (%): </label>
-    <input type="number" id="rate" min="0" max="100" value="5" step="1"><br>
+        <br>
     
-    <label for="years">Enter number of years: </label>
-    <input type="number" id="years" min="1" max="150" step="1"><br>
-    
-    <label for="monthly">Enter monthly contribution amount (£): </label>
-    <input type="number" id="monthly" min="0" max="1000000" step="100"><br>
-    
-    <button onclick="calculateCompoundInterest()">Calculate</button>
-    
-    <h2>Results</h2>
-    <p id="result"></p>
-    <canvas id="interestChart" width="400" height="200"></canvas>
-
-    <br>
-    
-    <h2>Yearly Breakdown</h2>
-    <table id="resultTable">
-        <thead>
-            <tr>
-                <th>Year</th>
-                <th>Value (£)</th>
-                <th>Contribution (£)</th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+        <h2>Yearly Breakdown</h2>
+        <table id="resultTable">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Value (£)</th>
+                    <th>Contribution (£)</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </main>
 
     <footer>
         <p>&copy; 2024 Charlie Jones</p>

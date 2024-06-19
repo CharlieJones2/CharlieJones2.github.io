@@ -8,9 +8,9 @@ function calculateCompoundInterest() {
 
     let totalValue = initial;
     let totalContribution = initial;
-    const yearsList = [];
-    const valuesList = [];
-    const contributions = [];
+    const yearsList = [0];
+    const valuesList = [initial];
+    const contributions = [0];
 
     for (let i = 0; i < years; i++) {
         yearsList.push(i + 1);
@@ -40,12 +40,12 @@ function calculateCompoundInterest() {
             datasets: [{
                 label: 'Total Value',
                 data: valuesList,
-                borderColor: 'blue',
+                borderColor: '#657B76',
                 fill: false
             }, {
                 label: 'Total Contribution',
                 data: contributions,
-                borderColor: 'green',
+                borderColor: '#CB4B16',
                 fill: false
             }]
         },

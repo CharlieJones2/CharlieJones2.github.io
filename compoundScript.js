@@ -85,6 +85,7 @@ function calculateCompoundInterest() {
         contributionCell.textContent = `£${formatCurrency(contributions[i])}`;
         interestCell.textContent = `£${formatCurrency(interestList[i])}`;
     }
+    document.getElementById('hiddenResults').classList.remove('hidden');
 }
 
 function formatCurrency(value) {

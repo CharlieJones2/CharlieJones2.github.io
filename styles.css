@@ -207,7 +207,7 @@ input {
     border: 1px solid #657b83; 
     outline: none;
     border-radius: 5px;
-    margin-left: 5px;
+    padding-left: 5px;
     background-color: #FDF6E3;
 }
 

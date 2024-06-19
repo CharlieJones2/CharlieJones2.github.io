@@ -73,7 +73,7 @@ function calculateCompoundInterest() {
     // Render the table
     const tableBody = document.getElementById('resultTable').getElementsByTagName('tbody')[0];
     tableBody.innerHTML = ''; // Clear previous results
-    for (let i = 0; i <= years; i++) {
+    for (let i = 0; i < years; i++) {
         const row = tableBody.insertRow();
         const yearCell = row.insertCell(0);
         const valueCell = row.insertCell(1);

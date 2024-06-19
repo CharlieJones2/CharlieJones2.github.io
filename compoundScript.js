@@ -76,10 +76,12 @@ function calculateCompoundInterest() {
         const yearCell = row.insertCell(0);
         const valueCell = row.insertCell(1);
         const contributionCell = row.insertCell(2);
+        const interestCell = row.insertCell(3);
 
         yearCell.textContent = yearsList[i];
         valueCell.textContent = `£${formatCurrency(valuesList[i])}`;
         contributionCell.textContent = `£${formatCurrency(contributions[i])}`;
+        interestCell.textContent = `£${formatCurrency(valuesList[i] - contributionsList[i])}`;
     }
 }
 

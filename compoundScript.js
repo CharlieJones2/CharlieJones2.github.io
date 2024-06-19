@@ -84,11 +84,11 @@ function calculateCompoundInterest() {
         interestCell.textContent = `£${formatCurrency(valuesList[i] - contributionsList[i])}`;
     }
     document.getElementById('resultsHeader').classList.remove('hidden');
-    document.getElementById('tableHeader').classList.remove('hidden');
-    document.getElementById('result').classList.remove('hidden');
-    document.getElementById('interestChart').classList.remove('hidden');
-    document.getElementById('breakdownHeader').classList.remove('hidden');
-    document.getElementById('resultTable').classList.remove('hidden');
+    // document.getElementById('tableHeader').classList.remove('hidden');
+    // document.getElementById('result').classList.remove('hidden');
+    // document.getElementById('interestChart').classList.remove('hidden');
+    // document.getElementById('breakdownHeader').classList.remove('hidden');
+    // document.getElementById('resultTable').classList.remove('hidden');
 }
 
 function formatCurrency(value) {

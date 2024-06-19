@@ -10,7 +10,7 @@ function calculateCompoundInterest() {
     let totalContribution = initial;
     const yearsList = [0];
     const valuesList = [initial];
-    const contributions = [0];
+    const contributions = [initial];
 
     for (let i = 0; i < years; i++) {
         yearsList.push(i + 1);

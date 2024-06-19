@@ -85,6 +85,7 @@ function calculateCompoundInterest() {
     }
     document.getElementById('placeholder').classList.add('hidden');
     document.getElementById('resultsHeader').classList.remove('hidden');
+    document.getElementById('tableHeader').classList.remove('hidden');
     document.getElementById('result').classList.remove('hidden');
     document.getElementById('interestChart').classList.remove('hidden');
     document.getElementById('breakdownHeader').classList.remove('hidden');

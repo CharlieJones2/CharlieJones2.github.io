@@ -202,8 +202,18 @@ input:focus {
     outline: 2px solid #657b83;
 }
 
+input {
+    background-color: #657B83;
+    color: #ffffff; 
+    font-family: inherit; 
+    border: none; 
+    outline: none;
+    border-radius: 5px;
+}
+
 button {
     margin-top: 10px;
     padding: 10px;
-    background: #657b83;
+    background-color: #657b83;
+    color: #ffffff;
 }

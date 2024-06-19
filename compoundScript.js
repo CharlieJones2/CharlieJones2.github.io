@@ -83,7 +83,7 @@ function calculateCompoundInterest() {
         yearCell.textContent = yearsList[i];
         valueCell.textContent = `£${formatCurrency(valuesList[i])}`;
         contributionCell.textContent = `£${formatCurrency(contributions[i])}`;
-        interestCell.textContent = `£${formatCurrency(valuesList[i] - contributionsList[i])}`;
+        interestCell.textContent = `£${formatCurrency(interestList[i])}`;
     }
 }
 

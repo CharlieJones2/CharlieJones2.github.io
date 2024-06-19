@@ -202,18 +202,20 @@ input:focus {
     outline: 2px solid #657b83;
 }
 
-input {
-    background-color: #657B83;
-    color: #ffffff; 
+input { 
     font-family: inherit; 
-    border: none; 
+    border: 1px solid #657b83; 
     outline: none;
     border-radius: 5px;
+    margin-left: 5px;
+    background-color: #FDF6E3;
 }
 
 button {
     margin-top: 10px;
     padding: 10px;
+    font-family: inherit;
+    border-radius: 5px;
     background-color: #657b83;
     color: #ffffff;
 }

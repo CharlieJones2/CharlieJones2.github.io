@@ -11,6 +11,7 @@ function calculateCompoundInterest() {
     const yearsList = [0];
     const valuesList = [initial];
     const contributions = [initial];
+    const interestList = [0];
 
     for (let i = 0; i < years; i++) {
         yearsList.push(i + 1);
@@ -21,6 +22,7 @@ function calculateCompoundInterest() {
         totalValue *= (1 + rate);
         contributions.push(totalContribution);
         valuesList.push(totalValue);
+        interestList.push(totalValue - totalContribution);
     }
 
     document.getElementById('result').innerText = 

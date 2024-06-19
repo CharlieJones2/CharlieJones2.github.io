@@ -178,7 +178,6 @@ body .gist .gist-meta {
   }
 
 table {
-/*     width: 100%; */
     border-collapse: collapse;
     margin-top: 20px;
 }
@@ -192,17 +191,19 @@ th, td {
     text-align: right;
 }
 
-/* .input_wrapper .open {
-    right: 50%;
-    width: 500px;
-    height: 70px;
-} */
-
 .input_wrapper {
-/*     width: 100%; */
     height: 100%;
     border: none;
     outline: none;
     padding: 10px;
-/*     font-size: 1rem; */
+}
+
+input:focus {
+    outline: 2px solid #657b83;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #657b83;
 }
